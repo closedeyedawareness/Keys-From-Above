@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420">
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#f8e3a7"/><stop offset=".45" stop-color="#c8922e"/><stop offset="1" stop-color="#fff1bc"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+<g fill="none" stroke="url(#g)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
+<path d="M365 108 L498 34 L630 83 L596 190 L340 190 Z"/>
+<path d="M455 164 h120"/>
+<path d="M391 190 v-30 m21 30 v-30 m21 30 v-30 m21 30 v-30 m21 30 v-30"/>
+</g>
+<text x="450" y="285" text-anchor="middle" font-family="Georgia,serif" font-size="142" letter-spacing="54" fill="url(#g)">KEYS</text>
+<text x="450" y="365" text-anchor="middle" font-family="Georgia,serif" font-size="44" letter-spacing="24" fill="url(#g)">FROM ABOVE</text>
+</svg>
