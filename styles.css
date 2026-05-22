@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root{--gold:#e7b95e;--soft:#ffe0a0;--line:rgba(231,185,94,.74);--orange:#ff5533}
+*{box-sizing:border-box} html{background:#080503} body{margin:0;color:white;font-family:Inter,system-ui,sans-serif;min-height:100vh;background:
+radial-gradient(circle at 50% -10%, rgba(255,218,135,.20), transparent 34rem),
+radial-gradient(circle at 50% 88%, rgba(255,86,42,.12), transparent 24rem),
+linear-gradient(#070604,#050403 55%,#110704)}
+body:before{content:"";position:fixed;inset:0;background-image:linear-gradient(rgba(231,185,94,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(231,185,94,.035) 1px,transparent 1px);background-size:105px 105px;mask-image:linear-gradient(to bottom, transparent, black 20%, black 80%, transparent);pointer-events:none}
+.ambient{position:fixed;inset:0;pointer-events:none;background:
+radial-gradient(ellipse at 12% 28%,rgba(231,185,94,.12),transparent 22rem),
+radial-gradient(ellipse at 90% 55%,rgba(231,185,94,.10),transparent 24rem)}
+.page{width:min(100%,860px);margin:0 auto;padding:26px 24px 42px;position:relative;overflow:hidden}
+.hero{min-height:650px;display:flex;align-items:flex-end;justify-content:center;text-align:center;position:relative;padding-bottom:44px}
+.piano{position:absolute;left:0;right:0;top:0;height:340px;border-radius:0 0 36px 36px;overflow:hidden;background:
+linear-gradient(90deg, #19140d 0 5%, #d7bd86 5% 9%, #16120c 9% 13%, #c8ad78 13% 17%, #14100a 17% 20%, #dfc691 20% 26%, #17120d 26% 31%, #c1a06b 31% 36%, #17120d 36% 40%, #dec58c 40% 47%, #17120d 47% 52%, #d8bd82 52% 59%, #16110b 59% 63%, #c4a66e 63% 70%, #17120d 70% 76%, #dec58d 76% 82%, #17120d 82% 87%, #d5b87f 87% 92%, #15110b 92% 100%);
+box-shadow:inset 0 -90px 75px #050403, inset 0 40px 80px rgba(255,232,160,.28),0 24px 80px rgba(231,185,94,.13)}
+.piano:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 8%,rgba(255,255,255,.28) 9%,transparent 10%,transparent 48%,rgba(255,255,255,.23) 49%,transparent 52%,transparent 89%,rgba(255,255,255,.18) 90%,transparent 92%),linear-gradient(to bottom,rgba(0,0,0,.75),transparent 28%,rgba(0,0,0,.25) 50%,#050403 100%)}
+.piano:after{content:"";position:absolute;top:0;left:4%;right:4%;height:230px;background:repeating-linear-gradient(90deg, transparent 0 52px, #020202 52px 84px, transparent 84px 108px);filter:drop-shadow(0 20px 20px #000);border-radius:0 0 18px 18px;opacity:.9}
+.brand{position:relative;z-index:2;text-shadow:0 0 25px rgba(231,185,94,.35)}
+.mark{width:190px;height:92px;fill:none;stroke:var(--gold);stroke-width:5;stroke-linecap:round;stroke-linejoin:round;filter:drop-shadow(0 0 18px rgba(231,185,94,.38))}
+h1{font-family:Cinzel,serif;font-size:clamp(76px,17vw,124px);margin:0;line-height:.82;letter-spacing:.09em;color:#f8d68f;background:linear-gradient(#fff0bd,#c89132);-webkit-background-clip:text;color:transparent}
+h2{font-family:Cinzel,serif;font-size:clamp(28px,7vw,52px);font-weight:500;letter-spacing:.38em;margin:18px 0 0;color:#f1c777}
+.brand p{letter-spacing:.45em;font-size:clamp(16px,3.5vw,25px);font-weight:700;margin:44px 0 0}
+
+.links{display:grid;gap:14px;margin-top:-20px;position:relative;z-index:5}
+.link-card,.contact{height:104px;border:1.5px solid var(--line);border-radius:22px;display:flex;align-items:center;gap:28px;padding:0 40px;background:linear-gradient(110deg,rgba(8,7,5,.92),rgba(19,14,7,.70));text-decoration:none;color:white;box-shadow:inset 0 0 30px rgba(231,185,94,.04),0 10px 38px rgba(0,0,0,.35);transition:.22s ease}
+.link-card:hover,.contact:hover{transform:translateY(-2px);border-color:#ffe1a0;box-shadow:0 0 38px rgba(231,185,94,.20)}
+.link-card span:nth-child(2){font-size:clamp(26px,5vw,36px);font-weight:650;letter-spacing:.01em;flex:1}
+.link-card b,.groover b{font-size:64px;font-weight:300;line-height:1;color:white}
+.icon{width:54px;height:54px;display:grid;place-items:center;font-size:50px;flex:0 0 auto}
+.icon svg{width:54px;height:54px;fill:currentColor}
+.spotify{color:#1ed760}.youtube{color:#ff1f1f}.apple{color:#ff3c7f}.gold,.socials a{color:#f0c678}.insta{color:#ff65b4}.tiktok{color:white}
+
+.groover{margin:38px auto 44px;min-height:162px;border-radius:24px;border:2px solid #ff694e;background:linear-gradient(110deg,rgba(11,8,6,.96),rgba(18,10,6,.85));display:grid;grid-template-columns:1fr 1.4fr auto;align-items:center;gap:26px;padding:26px 48px;text-decoration:none;color:white;box-shadow:0 0 24px rgba(255,87,55,.65),0 0 70px rgba(255,87,55,.25),inset 0 0 30px rgba(255,87,55,.07)}
+.groover-logo{display:flex;align-items:center;gap:13px;color:var(--orange)}
+.groover-logo svg{width:52px;height:52px;fill:currentColor}
+.groover-logo strong{font-size:44px;font-weight:800;color:var(--orange)}
+.groover-copy{border-left:1px solid rgba(231,185,94,.75);padding-left:34px}
+.groover h3{margin:0;font-size:30px;letter-spacing:.22em}.groover p{font-size:22px;line-height:1.35;margin:8px 0 0;color:#ffeac1}
+
+.about{text-align:center;margin:0 auto 38px;max-width:760px}
+.about h3{font-size:24px;letter-spacing:.36em;color:var(--gold);font-weight:700}
+.about p{font-size:26px;line-height:1.55;color:rgba(255,255,255,.88);margin:28px 0}
+.divider{display:flex;align-items:center;justify-content:center;gap:28px;color:var(--gold)}
+.divider span{height:1px;width:160px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}.divider em{font-style:normal;font-size:28px}
+
+.contact{height:auto;min-height:96px;margin:0 auto 38px;justify-content:center;color:#ffd98e;font-size:26px}.contact span{font-size:42px}.contact strong{font-weight:500}
+footer{text-align:center;color:rgba(255,255,255,.65);font-size:20px}.socials{display:flex;justify-content:center;gap:54px;margin-bottom:26px}.socials a{text-decoration:none;font-size:34px}
+
+@media (max-width:640px){
+ .page{padding:0 24px 34px}.hero{min-height:565px;padding-bottom:54px}.piano{left:-24px;right:-24px;height:285px;border-radius:0}
+ .mark{width:150px} h2{letter-spacing:.27em}.brand p{letter-spacing:.38em}
+ .link-card{height:86px;border-radius:18px;padding:0 32px;gap:24px}.link-card span:nth-child(2){font-size:28px}.icon{width:42px;height:42px;font-size:40px}.icon svg{width:42px;height:42px}.link-card b{font-size:50px}
+ .groover{grid-template-columns:1fr;gap:12px;text-align:center;padding:28px 22px}.groover-copy{border-left:0;border-top:1px solid rgba(231,185,94,.55);padding:18px 0 0}.groover b{position:absolute;right:32px}.groover-logo{justify-content:center}.groover-logo strong{font-size:38px}.groover h3{font-size:24px}.groover p{font-size:21px}
+ .about h3{font-size:20px;letter-spacing:.31em}.about p{font-size:24px}.contact{font-size:22px;gap:18px;padding:20px}.socials{gap:38px}
+}
